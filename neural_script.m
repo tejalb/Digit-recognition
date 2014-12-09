@@ -1,4 +1,3 @@
-%% Machine Learning Online Class - Exercise 3 | Part 2: Neural Networks
 
 
 %
@@ -18,9 +17,7 @@ num_labels = 10;          % 10 labels, from 1 to 10
                           % (note that we have mapped "0" to label 10)
 
 %% =========== Part 1: Loading and Visualizing Data =============
-%  We start the exercise by first loading and visualizing the dataset. 
-%  You will be working with a dataset that contains handwritten digits.
-%
+
 
 % Load Training Data
 fprintf('Loading and Visualizing Data ...\n')
@@ -38,8 +35,7 @@ fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 %% ================ Part 2: Loading Pameters ================
-% In this part of the exercise, we load some pre-initialized 
-% neural network parameters.
+
 
 fprintf('\nLoading Saved Neural Network Parameters ...\n')
 
@@ -48,9 +44,7 @@ load('ex3weights.mat');
 
 %% ================= Part 3: Implement Predict =================
 %  After training the neural network, we would like to use it to predict
-%  the labels. You will now implement the "predict" function to use the
-%  neural network to predict the labels of the training set. This lets
-%  you compute the training set accuracy.
+%  the labels.
 
 pred = predict(Theta1, Theta2, X);
 
